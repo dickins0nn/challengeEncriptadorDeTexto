@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-primario: #0A3871;
+    --color-secundario: #D8DFE8;
+    --color-terciario: #343A40;
+    --color-cuaternario: #FFFFFF;
+    --color-quinario: #F3F5FC;
+    --color-senario: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;;
+}
+
+body{
+    background-color: var(--color-quinario);
+    box-sizing: border-box;
+}
+
+.logo_alura {
+    width: 10%;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+.presentacion {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 350px;
+}
+
+.campo_texto {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--color-primario);
+    padding-left: 200px;
+    margin-top: 10%;
+}
+
+.adv_btn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.div_adv {
+    display: flex;
+    padding-left: 200px;
+    gap: 8px;
+}
+
+.advertencia {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-senario);
+}
+
+.presentacion_botones {
+    display: flex;
+    gap: 24px;
+    padding-left: 200px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn_en {
+    border-color: transparent;
+    border-radius: 24px;
+    width: 250px;
+    height: 67px;
+    background-color: var(--color-primario);
+    color: var(--color-cuaternario);
+}
+
+.btn_des {
+    background-color: var(--color-secundario);
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 250px;
+    height: 67px;
+}
+
+.container_2 {
+    box-shadow: 0px 24px 32px -8px #00000014;
+    background-color: var(--color-cuaternario);
+    border-radius: 32px;
+    width: 500px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    position: relative;
+    top: -70px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.parrafos_ctn2 {
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ning {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ingr {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.img_2 {
+    width: 336px;
+    background-color: transparent;
+}
+
+.no-border {
+    border: none;
+    outline: none;
+    max-width: 390px;
+    height: 10px;
+    white-space: normal;
+    overflow: visible;
+}
+
+
+#btnCopiar {
+    margin-top: 400px;
+    border-radius: 24px;
+    width: 250px;
+    height: 67px;
+    background-color: var(--color-primario);
+    color: var(--color-cuaternario);
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .container_1 {
+        gap: 350px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .campo_texto {
+        padding-left: 200px;
+        font-size: 32px;
+    }
+
+    .div_adv, .presentacion_botones {
+        padding-left: 200px;
+        justify-content: flex-start;
+    }
+
+    .container_2 {
+        width: 500px;
+        height: 680px;
+        padding: 0;
+        margin-left: 50px;
+        top: -70px;
+    }
+}
+
